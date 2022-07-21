@@ -1,0 +1,67 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "data"
+    ],
+    "properties": {
+        "data": {
+            "type": "object",
+            "default": {},
+            "title": "The data Schema",
+            "required": [
+                "user"
+            ],
+            "properties": {
+                "user": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The user Schema",
+                    "required": [
+                        "access_token",
+                        "token_type"
+                    ],
+                    "properties": {
+                        "access_token": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The access_token Schema",
+                            "examples": [
+                                "b527607621f251f7d4b673f9a7f355f25b9d0d80864308ffbcd9ce83ff05851e"
+                            ]
+                        },
+                        "token_type": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The token_type Schema",
+                            "examples": [
+                                "bearer"
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "access_token": "b527607621f251f7d4b673f9a7f355f25b9d0d80864308ffbcd9ce83ff05851e",
+                        "token_type": "bearer"
+                    }]
+                }
+            },
+            "examples": [{
+                "user": {
+                    "access_token": "b527607621f251f7d4b673f9a7f355f25b9d0d80864308ffbcd9ce83ff05851e",
+                    "token_type": "bearer"
+                }
+            }]
+        }
+    },
+    "examples": [{
+        "data": {
+            "user": {
+                "access_token": "b527607621f251f7d4b673f9a7f355f25b9d0d80864308ffbcd9ce83ff05851e",
+                "token_type": "bearer"
+            }
+        }
+    }]
+}

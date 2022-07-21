@@ -36,15 +36,15 @@ const testCase = {
 describe(`@post @register ${testCase.describe}`, () => {
 	describe('@post @register Positive Case', () => {
 		it(`@post @register  ${testCase.positive.userRegisterFromiOS}`, async () => {
-			let PhoneNumberiOS = '628119100' + randomNumber
-			let paramRegister = {
-				"phone": `${PhoneNumberiOS}`,
-        		"password": "123123",
-        		"country": "ID",
-        		"latlong": "‑6.200000-106.816666",
-        		"device_token": "12",
-        		"device_type": "0"
-			}
+				let PhoneNumberiOS = '628119100' + randomNumber
+				let paramRegister = {
+					"phone": `${PhoneNumberiOS}`,
+					"password": "123123",
+					"country": "ID",
+					"latlong": "‑6.200000-106.816666",
+					"device_token": "12",
+					"device_type": "0"
+				}
 			const response = await page.registerPage(paramRegister)
 			assert(response.status).to.equal(code.successCreated.codeNumber, response.body)
 			assert(response.body.data.user.phone).to.equal(PhoneNumberiOS)
