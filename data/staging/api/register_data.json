@@ -1,0 +1,24 @@
+{
+    "dataRegister":{
+        "phone": "6281394130627",
+        "password": "123123",
+        "country": "ID",
+        "latlong": "‑6.200000-106.816666",
+        "device_token": "12",
+        "device_type": "0"
+    },
+    "dataRegisterPhoneMissing":{
+        "password": "123123",
+        "country": "ID",
+        "latlong": "‑6.200000-106.816666",
+        "device_token": "12",
+        "device_type": "0"
+    },
+    "dataRegisterPasswordMissing":{
+        "phone": "6281394130628",
+        "country": "ID",
+        "latlong": "‑6.200000-106.816666",
+        "device_token": "12",
+        "device_type": "0"
+    }
+}

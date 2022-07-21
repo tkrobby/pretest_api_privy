@@ -1,0 +1,108 @@
+{
+    "successOk": {
+        "codeNumber": 200,
+        "codeMessage": "OK"
+    },
+    "successCreated": {
+        "codeNumber": 201,
+        "codeMessage": "Created"
+    },
+    "successAccepted": {
+        "codeNumber": 202,
+        "codeMessage": "Accepted"
+    },
+    "successNoContent": {
+        "codeNumber": 204,
+        "codeMessage": "No Content"
+    },
+    "redirectionNotModified": {
+        "codeNumber": 304,
+        "codeMessage": "Not Modified"
+    },
+    "errorBadRequest": {
+        "codeNumber": 400,
+        "codeMessage": "Bad Request",
+        "errorMessageAuth":[
+            " User not found",
+            "[Username is a required field.]",
+            "invalid password",
+            "[Password is a required field.]",
+            "login type is not defined",
+            "[Type is a required field.]",
+            "client not found",
+            "[Client ID is a required field.]",
+            "Invalid user ID",
+            "User Not Found",
+            "NIK yang anda masukkan tidak sesuai",
+            "[Nik is a required field.]",
+            "invalid password",
+            "[Password is a required field.]",
+            "[NewPassword is a required field.]"
+        ],
+        "errorMessageRole":[
+            "this role not belong to this user",
+            "malformat role_id",
+            "cant parse role ID (INV)",
+            "[Name is a required field.]",
+            "one or more resource not found",
+            "one or more permission not found",
+            "cant parse branch id (invalid)",
+            "one or more branch not found"
+        ]
+    },
+    "errorUnauthorized": {
+        "codeNumber": 401,
+        "codeMessage": "Unauthorized"
+    },
+    "errorForbidden": {
+        "codeNumber": 403,
+        "codeMessage": "Forbidden"
+    },
+    "errorNotFound": {
+        "codeNumber": 404,
+        "codeMessage": "Not Found",
+        "errorMessageAuth":[
+            "credential not found"
+        ]
+    },
+    "errorNotAcceptabble": {
+        "codeNumber": 406,
+        "codeMessage": "Not Acceptabble"
+    },
+    "errorRequestTimeout": {
+        "codeNumber": 408,
+        "codeMessage": "Request Timeout"
+    },
+    "errorConflict": {
+        "codeNumber": 409,
+        "codeMessage": "Conflict"
+    },
+    "errorUnprocessableEntity": {
+        "codeNumber": 422,
+        "codeMessage": "Unprocessable Entity"
+    },
+    "errorTooManyRequest": {
+        "codeNumber": 429,
+        "codeMessage": "Too Many Requests"
+    },
+    "internalServerError": {
+        "codeNumber": 500,
+        "codeMessage": "Internal Server Error"
+    },
+    "notImplemented": {
+        "codeNumber": 501,
+        "codeMessage": "Not Implemented"
+    },
+    "badGateway": {
+        "codeNumber": 502,
+        "codeMessage": "Bad Gateway"
+    },
+    "serviceUnavailable": {
+        "codeNumber": 503,
+        "codeMessage": "Service Unavailable"
+    },
+    "gatewayTimeout": {
+        "codeNumber": 504,
+        "codeMessage": "Gateway Timeout"
+    }
+}

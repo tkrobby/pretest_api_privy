@@ -1,0 +1,184 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "data"
+    ],
+    "properties": {
+        "data": {
+            "type": "object",
+            "default": {},
+            "title": "The data Schema",
+            "required": [
+                "user"
+            ],
+            "properties": {
+                "user": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The user Schema",
+                    "required": [
+                        "id",
+                        "phone",
+                        "user_status",
+                        "user_type",
+                        "sugar_id",
+                        "country",
+                        "latlong",
+                        "user_device"
+                    ],
+                    "properties": {
+                        "id": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The id Schema",
+                            "examples": [
+                                "286fc8ab-a3cf-48d4-8701-b65d052fd567"
+                            ]
+                        },
+                        "phone": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The phone Schema",
+                            "examples": [
+                                "62813941306211"
+                            ]
+                        },
+                        "user_status": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The user_status Schema",
+                            "examples": [
+                                "pending"
+                            ]
+                        },
+                        "user_type": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The user_type Schema",
+                            "examples": [
+                                "normal_user"
+                            ]
+                        },
+                        "sugar_id": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The sugar_id Schema",
+                            "examples": [
+                                "SG43286"
+                            ]
+                        },
+                        "country": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The country Schema",
+                            "examples": [
+                                "ID"
+                            ]
+                        },
+                        "latlong": {
+                            "type": "null",
+                            "default": null,
+                            "title": "The latlong Schema",
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "user_device": {
+                            "type": "object",
+                            "default": {},
+                            "title": "The user_device Schema",
+                            "required": [
+                                "device_token",
+                                "device_type",
+                                "device_status"
+                            ],
+                            "properties": {
+                                "device_token": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "The device_token Schema",
+                                    "examples": [
+                                        "12"
+                                    ]
+                                },
+                                "device_type": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "The device_type Schema",
+                                    "examples": [
+                                        "ios"
+                                    ]
+                                },
+                                "device_status": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "The device_status Schema",
+                                    "examples": [
+                                        "grant"
+                                    ]
+                                }
+                            },
+                            "examples": [{
+                                "device_token": "12",
+                                "device_type": "ios",
+                                "device_status": "grant"
+                            }]
+                        }
+                    },
+                    "examples": [{
+                        "id": "286fc8ab-a3cf-48d4-8701-b65d052fd567",
+                        "phone": "62813941306211",
+                        "user_status": "pending",
+                        "user_type": "normal_user",
+                        "sugar_id": "SG43286",
+                        "country": "ID",
+                        "latlong": null,
+                        "user_device": {
+                            "device_token": "12",
+                            "device_type": "ios",
+                            "device_status": "grant"
+                        }
+                    }]
+                }
+            },
+            "examples": [{
+                "user": {
+                    "id": "286fc8ab-a3cf-48d4-8701-b65d052fd567",
+                    "phone": "62813941306211",
+                    "user_status": "pending",
+                    "user_type": "normal_user",
+                    "sugar_id": "SG43286",
+                    "country": "ID",
+                    "latlong": null,
+                    "user_device": {
+                        "device_token": "12",
+                        "device_type": "ios",
+                        "device_status": "grant"
+                    }
+                }
+            }]
+        }
+    },
+    "examples": [{
+        "data": {
+            "user": {
+                "id": "286fc8ab-a3cf-48d4-8701-b65d052fd567",
+                "phone": "62813941306211",
+                "user_status": "pending",
+                "user_type": "normal_user",
+                "sugar_id": "SG43286",
+                "country": "ID",
+                "latlong": null,
+                "user_device": {
+                    "device_token": "12",
+                    "device_type": "ios",
+                    "device_status": "grant"
+                }
+            }
+        }
+    }]
+}
