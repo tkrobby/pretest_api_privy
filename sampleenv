@@ -1,2 +1,2 @@
 STAGE = staging
-BASEURL_URL = https://api.s.sicepat.io
+BASEURL_URL = http://pretest-qa.dcidev.id
