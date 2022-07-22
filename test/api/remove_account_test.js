@@ -15,7 +15,7 @@ let delta = range.max - range.min
 
 const randomNumber = Math.round(range.min + Math.random() * delta)
 
-const path = '/api/v1/register/remove';
+const path = '/api/v1/register/remove	';
 const HTTPMethod = 'POST';
 
 const testCase = {
