@@ -1,0 +1,13 @@
+{
+    "dataUpdateProfileEducationWithoutName":{
+        "graduation_time": "12-12-1997"
+    },
+    "dataUpdateProfileEducationWithoutGraduationTime":{
+        "school_name" : "John Doe X"
+    },
+    "dataUpdateProfileEducationWithInvalidFormatDate":{
+        "school_name" : "John Doe X",
+        "graduation_time": "1997"
+    }
+
+}

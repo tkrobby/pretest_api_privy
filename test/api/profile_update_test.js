@@ -49,7 +49,7 @@ describe(`@post @profile ${testCase.describe}`, () => {
 	describe('@post @profile Positive Case', () => {
 		it(`@post @profile  ${testCase.positive.userUpdateProfile}`, async () => {
 			let paramUpdateProfile = {
-				"name": `John Doe Jo + ${loginAccessToken}`,
+				"name": `John Doe Jo + ${randomNumber}`,
 				"gender": "0",
 				"birthday": "12-12-1997",
 				"hometown" : "Bandung",
@@ -57,12 +57,13 @@ describe(`@post @profile ${testCase.describe}`, () => {
 			}
 			const response = await page.updateProfile(paramUpdateProfile,loginAccessToken)
 			assert(response.status).to.equal(code.successCreated.codeNumber, response.body)
+			assert(response.body).to.jsonSchema(schema)
 		})
 	})
 	describe('@post @profile Negative Case', () => {
 		it(`@post @profile ${testCase.negative.userUpdateProfileWithInvalidAccessToke}`, async () => {
 			let paramUpdateProfile = {
-				"name": `John Doe Jo + ${loginAccessToken}`,
+				"name": `John Doe Jo + ${randomNumber}`,
 				"gender": "0",
 				"birthday": "12-12-1997",
 				"hometown" : "Bandung",
