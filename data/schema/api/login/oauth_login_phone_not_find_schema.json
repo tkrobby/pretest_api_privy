@@ -1,0 +1,51 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "error"
+    ],
+    "properties": {
+        "error": {
+            "type": "object",
+            "default": {},
+            "title": "The error Schema",
+            "required": [
+                "errors"
+            ],
+            "properties": {
+                "errors": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The errors Schema",
+                    "items": {
+                        "type": "string",
+                        "default": "",
+                        "title": "A Schema",
+                        "examples": [
+                            "Cant find user by phone number: 6289125252525123"
+                        ]
+                    },
+                    "examples": [
+                        [
+                            "Cant find user by phone number: 6289125252525123"]
+                    ]
+                }
+            },
+            "examples": [{
+                "errors": [
+                    "Cant find user by phone number: 6289125252525123"
+                ]
+            }]
+        }
+    },
+    "examples": [{
+        "error": {
+            "errors": [
+                "Cant find user by phone number: 6289125252525123"
+            ]
+        }
+    }]
+}
