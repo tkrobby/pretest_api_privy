@@ -7,15 +7,14 @@ const stage = process.env.STAGE
 const page = require('../../page/api/oauth_revoke_page')
 const pageLogin = require('../../page/api/oauth_login_page')
 const dataLogin = require(`../../data/${stage}/api/oauth_login_data.json`)
-const schema = require('../../data/schema/api/login/oauth_get_credential_schema.json')
 const code = require('../../helpers/response_status.json')
 
 
-const path = '/api/v1/oauth/credentials/{access_token}';
-const HTTPMethod = 'GET';
+const path = '/api/v1/oauth/revoke';
+const HTTPMethod = 'POST';
 
 const testCase = {
-	describe: `User Get Credential | ${HTTPMethod} ${path}`,
+	describe: `User Revoke Access Token | ${HTTPMethod} ${path}`,
 	preCondition: 'Already Login',
 	positive: {
 		userRevokeAccessToken : 'As an User, I want to be able revoke access token',

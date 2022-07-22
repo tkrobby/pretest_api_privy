@@ -1,0 +1,33 @@
+{
+    "dataUpdateProfileWithoutName":{
+        "gender": "0",
+        "birthday": "12-12-1997",
+        "hometown": "Bandung",
+        "bio": "GAS"
+    },
+    "dataUpdateProfileWithoutGender":{
+        "name" : "John Doe X",
+        "birthday": "12-12-1997",
+        "hometown": "Bandung",
+        "bio": "GAS"
+    },
+    "dataUpdateProfileWithoutBirthday":{
+        "name" : "John Doe X",
+        "gender": "0",
+        "hometown": "Bandung",
+        "bio": "GAS"
+    },
+    "dataUpdateProfileInvalidFormatBirthday":{
+        "name" : "John Doe X",
+        "gender": "0",
+        "birthday": "1997",
+        "hometown": "Bandung",
+        "bio": "GAS"
+    },
+    "dataUpdateProfileWithoutHometown":{
+        "name" : "John Doe X",
+        "gender": "0",
+        "birthday": "01-09-1997",
+        "bio": "GAS"
+    }
+}
