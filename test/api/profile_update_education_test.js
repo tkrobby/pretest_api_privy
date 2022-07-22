@@ -4,7 +4,7 @@ chai.use(require('chai-json-schema'))
 require('dotenv').config()
 const stage = process.env.STAGE
 
-const page = require('../../page/api/profile_update_ education_page')
+const page = require('../../page/api/profile_update_education_page')
 const pageLogin = require('../../page/api/oauth_login_page')
 const dataLogin = require(`../../data/${stage}/api/oauth_login_data.json`)
 const data = require(`../../data/${stage}/api/profile_update_education_data`)
@@ -46,7 +46,7 @@ describe(`@post @profile ${testCase.describe}`, () => {
 	describe('@post @profile Positive Case', () => {
 		it(`@post @profile  ${testCase.positive.userUpdateProfileEducation}`, async () => {
 			let paramUpdateProfileEducation = {
-				"school_name": `TELKOM + ${randomNumber}`,
+				"school_name": `TELKOM ${randomNumber}`,
 				"graduation_time": "12-12-1997"
 			}
 			const response = await page.updateProfileEducation(paramUpdateProfileEducation,loginAccessToken)
@@ -57,7 +57,7 @@ describe(`@post @profile ${testCase.describe}`, () => {
 	describe('@post @profile Negative Case', () => {
 		it(`@post @profile ${testCase.negative.userUpdateProfileEducationWithInvalidAccessToke}`, async () => {
 			let paramUpdateProfileEducation = {
-				"school_name": `TELKOM + ${randomNumber}`,
+				"school_name": `TELKOM ${randomNumber}`,
 				"graduation_time": "12-12-1997"
 			}
 			const response = await page.updateProfileEducation(paramUpdateProfileEducation,'invalid')

@@ -1,0 +1,28 @@
+{
+    "dataUpdateProfileCareer":{
+        "position": "Lead SDET",
+        "company_name" : "META",
+        "starting_from" : "01-09-2019",
+        "ending_in" : "02-10-2021"
+    },
+    "dataUpdateProfileCareerWithoutPosition":{
+        "company_name" : "META",
+        "starting_from" : "01-09-2019",
+        "ending_in" : "02-10-2021"
+    },
+    "dataUpdateProfileCareerWithoutCompanyName":{
+        "position": "Lead SDET",
+        "starting_from" : "01-09-2019",
+        "ending_in" : "02-10-2021"
+    },
+    "dataUpdateProfileCareerWithoutStartingFrom":{
+        "position": "Lead SDET",
+        "company_name" : "META",
+        "ending_in" : "02-10-2021"
+    },
+    "dataUpdateProfileCareerEndingIn":{
+        "position": "Lead SDET",
+        "company_name" : "META",
+        "starting_from" : "01-09-2019"
+    }
+}
