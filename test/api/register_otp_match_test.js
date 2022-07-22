@@ -28,6 +28,8 @@ const testCase = {
 	},
 	negative: {
 		userRegisterOTPMatchWithInvalidUserID : 'As an User, I won\'t be able register otp match with invalid user id',
+		userRegisterOTPMatchWithoutUserID : 'As an User, I won\'t be able register otp match without user id parameter',
+		userRegisterOTPMatchWithoutOTP : 'As an User, I won\'t be able register otp match without otp parameter',
 	}
 };
 
@@ -67,6 +69,16 @@ describe(`@post @register ${testCase.describe}`, () => {
 			const response = await page.registerOTPMatchPage(data.dataRegisterOTPMatchInvalid)
 			assert(response.status).to.equal(code.internalServerError.codeNumber)
 			assert(response.body).to.jsonSchema(schemaError)
+		})
+		it(`@post @auth @register ${testCase.negative.userRegisterOTPMatchWithoutUserID}`, async () => {
+			const response = await page.registerOTPMatchPage(data.registerOTPMatchWithoutUserId)
+			assert(response.status).to.equal(code.errorNotAcceptabble.codeNumber)
+			assert(response.body.error.errors[0]).to.equal('user_id is missing')
+		})
+		it(`@post @auth @register ${testCase.negative.userRegisterOTPMatchWithoutOTP}`, async () => {
+			const response = await page.registerOTPMatchPage(data.registerOTPMatchWithoutOTP)
+			assert(response.status).to.equal(code.errorNotAcceptabble.codeNumber)
+			assert(response.body.error.errors[0]).to.equal('otp_code is missing')
 		})
 	})
 })

@@ -2,5 +2,11 @@
     "dataRegisterOTPMatchInvalid":{
         "user_id": "1d17a9db-56cf-4466-a37b-ee6f482c6b12XX",
         "otp_code": "1231"
+    },
+    "registerOTPMatchWithoutUserId":{
+        "otp_code": "1231"
+    },
+    "registerOTPMatchWithoutOTP":{
+        "user_id": "1d17a9db-56cf-4466-a37b-ee6f482c6b12"
     }
 }
