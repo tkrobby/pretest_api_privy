@@ -16,22 +16,17 @@ let delta = range.max - range.min
 
 const randomNumber = Math.round(range.min + Math.random() * delta)
 
-const path = '/api/v1/register';
+const path = '/api/v1/oauth/sign_in';
 const HTTPMethod = 'POST';
 
 const testCase = {
-	describe: `User Register | ${HTTPMethod} ${path}`,
-	preCondition: 'Already phone number active',
+	describe: `User Get Credential | ${HTTPMethod} ${path}`,
+	preCondition: 'Already Login',
 	positive: {
 		userLoginFromiOS : 'As an User, I want to be able login from iOS',
-		userLoginFromAndroid : 'As an User, I want to be able login from android',
-		userLoginFromWeb : 'As an User, I want to be able login from web',
 	},
 	negative: {
 		userLoginWithPhoneNotRegister : 'As an User, I won\'t be able login with phone number not register',
-		userLoginWithoutParameterPhone: 'As an User, I won\'t be able login without parameter phone',
-		userLoginWithoutParameterPassword : 'As an User, I won\'t be able login without parameter password',
-		userLoginWithInvalidPassword : 'As an User, I won\'t be able login with invalid password',
 	}
 };
 
